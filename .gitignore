@@ -1,0 +1,11 @@
+
+target/classes/entities/CarritoCompras.class
+target/classes/entities/Producto.class
+target/classes/META-INF/MANIFEST.MF
+target/classes/META-INF/maven/org.example/Trabajos-Practicos-6/pom.properties
+target/classes/META-INF/maven/org.example/Trabajos-Practicos-6/pom.xml
+target/test-classes/test/CarritoComprasTest.class
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+.project
+.classpath
