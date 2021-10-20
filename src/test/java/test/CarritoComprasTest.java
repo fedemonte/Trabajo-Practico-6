@@ -15,7 +15,7 @@ class CarritoComprasTest {
     
     
     @org.junit.jupiter.api.Test
-    void obtenerDescripcionProductos() {
+    void  verCantidadDeProductos(){
         carrito.agregarProducto(p1);
         int res_obtenido = carrito.verCantidadDeProductos();
         int res_esperado = 1;
@@ -24,7 +24,7 @@ class CarritoComprasTest {
     }
 
     @org.junit.jupiter.api.Test
-    void verCantidadDeProductos() {
+    void obtenerDescripcionProductos() {
         String res_obtenido = carrito.obtenerDescripcionProductos(p1);
         String res_esperado = "IPhone 12 Pro";
         assertEquals(res_esperado,res_obtenido);
@@ -34,11 +34,19 @@ class CarritoComprasTest {
     void agregarProdutoYaExistenteAlCarritoDeCompras() {
     	carrito.agregarProducto(p1);
     	carrito.agregarProducto(p2);
-    	carrito.agregarProducto(p3);
-    	int res_obtenido = carrito.buscarProducto(p1);
+    	carrito.agregarProducto(p1);
+    	int res_obtenido = carrito.buscarProductoEnLaListaDelCarrito(p1);
     	int res_esperado = 1;
     	assertEquals(res_obtenido, res_esperado);
     }
     
+    @org.junit.jupiter.api.Test
+    void eliminarProductoDelCarritoDeCompras() {
+    	if(carrito.verCantidadDeProductos() != 0) {
+    		boolean res_obtenido = carrito.eliminarProductoDelCarrito(p1);
+    		boolean res_esperado = true;
+    		assertEquals(res_obtenido, res_esperado);
+    	}
+    }
     
 }
