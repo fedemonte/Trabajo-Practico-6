@@ -7,22 +7,25 @@ public class Producto {
     private String detalle;
     private Double precio;
     private Boolean disponible;
-
+    private	int stockDisponible;
 
     public Producto() {
 
     }
 
 
-    public Producto(int id, String nombre, String detalle, boolean disponible, double precio) {
+    public Producto(int id, String nombre, String detalle, boolean disponible, double precio, int stockDisponible) {
         super();
         this.id = id;
         this.nombre = nombre;
         this.detalle = detalle;
         this.precio = precio;
         this.disponible = disponible;
+        this.stockDisponible = stockDisponible;
     }
-    
+
+
+
     
     public int getId() {
         return id;
@@ -65,4 +68,12 @@ public class Producto {
     public void setDisponible(Boolean disponible) {
         this.disponible = disponible;
     }
+    
+    public int getstockDisponible () {
+    	return stockDisponible;
+    }
+    public void setstockDisponible(int stockDisponible) {
+    	this.stockDisponible=stockDisponible;
+    }
 }
+

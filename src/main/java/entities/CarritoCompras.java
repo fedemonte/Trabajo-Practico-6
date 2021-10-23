@@ -12,6 +12,14 @@ public class CarritoCompras {
         productos.add(p);
 
     }
+    public void verificarStockProducto(Producto p){
+        if( p.getstockDisponible()>0){
+            p.setstockDisponible(p.getstockDisponible()-1);
+
+        }else {
+            System.out.println("No hay stock disponible");
+        }
+    }
 
     public String obtenerDescripcionProductos(Producto p) {
         return p.getDetalle();
@@ -43,5 +51,6 @@ public class CarritoCompras {
     	}
     return eliminado;	
     }
+    
     
 }
