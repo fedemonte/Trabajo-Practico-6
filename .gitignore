@@ -9,3 +9,4 @@ target/test-classes/test/CarritoComprasTest.class
 .settings/org.eclipse.jdt.core.prefs
 .project
 .classpath
+/target/
