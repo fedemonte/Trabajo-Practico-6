@@ -54,7 +54,11 @@ class CarritoComprasTest {
         carrito.verificarStockProducto(p5);
     	assertEquals(75,p5.getstockDisponible());
     }
-    
+    @org.junit.jupiter.api.Test
+    public void comprobar_Disponiblidad_Producto(){
+        carrito.verificarDisponiblidadProducto(p5);
+        assertEquals(true,p5.getDisponible());
+    }
     
 
 }

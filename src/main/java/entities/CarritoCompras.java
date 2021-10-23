@@ -20,6 +20,13 @@ public class CarritoCompras {
             System.out.println("No hay stock disponible");
         }
     }
+    public void verificarDisponiblidadProducto (Producto p){
+        if (p.getDisponible() == true) {
+            System.out.println("producto Disponible");
+        } else {
+            System.out.println("produdto NO Disponible");
+        }
+    }
 
     public String obtenerDescripcionProductos(Producto p) {
         return p.getDetalle();
