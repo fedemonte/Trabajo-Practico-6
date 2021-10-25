@@ -5,16 +5,19 @@ public class Impuesto {
     private String nombre;
     private double porcentaje;
     private String descripcion;
+    private boolean estado;
+
 
 
     public Impuesto() {
     }
 
-    public Impuesto(int idImpuesto, String nombre, double porcentaje, String descripcion) {
+    public Impuesto(int idImpuesto, String nombre, double porcentaje, String descripcion, boolean estado) {
         this.idImpuesto = idImpuesto;
         this.nombre = nombre;
         this.porcentaje = porcentaje;
         this.descripcion = descripcion;
+        this.estado = estado;
     }
 
     public int getIdImpuesto() {
@@ -47,5 +50,13 @@ public class Impuesto {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
     }
 }

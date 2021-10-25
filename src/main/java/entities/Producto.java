@@ -8,13 +8,14 @@ public class Producto {
     private Double precio;
     private Boolean disponible;
     private	int stockDisponible;
+    private String descripcion;
 
     public Producto() {
 
     }
 
 
-    public Producto(int id, String nombre, String detalle, boolean disponible, double precio, int stockDisponible) {
+    public Producto(int id, String nombre, String detalle, boolean disponible, double precio, int stockDisponible, String descripcion) {
         super();
         this.id = id;
         this.nombre = nombre;
@@ -22,6 +23,7 @@ public class Producto {
         this.precio = precio;
         this.disponible = disponible;
         this.stockDisponible = stockDisponible;
+        this.descripcion = descripcion;
     }
 
 
@@ -74,6 +76,14 @@ public class Producto {
     }
     public void setstockDisponible(int stockDisponible) {
     	this.stockDisponible=stockDisponible;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 }
 

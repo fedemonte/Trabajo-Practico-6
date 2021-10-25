@@ -58,6 +58,12 @@ public class CarritoCompras {
     	}
     return eliminado;	
     }
-    
+     public boolean nombre_y_descripcion(Producto p ){
+        if (p.getNombre() != null && p.getDescripcion() != null ){
+            return true;
+        }
+        return false;
+
+     }
     
 }

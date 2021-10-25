@@ -34,4 +34,15 @@ public class ImpuestoService {
         }
         return impuesto;
     }
+    public boolean eliminarImpuesto (Impuesto impuesto){
+       if (impuesto.isEstado() != false){
+           impuesto.setEstado(false);
+           return true;
+       }else  {
+           System.out.println("El impuesto estaba dado de baja");
+           return false;
+       }
+
+
+    }
 }
